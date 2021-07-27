@@ -1,0 +1,8 @@
+4. Errors are good
+
+- We got the 'unitialized constant' error. 
+- We followed the stack trace and indentified the line that the error was occurring on - line 1 of irb.
+- We had a good understanding of what the error was from existing knowledge. We skimmed Ruby Documentation to confirm this.
+- We solved the error by creating the missing class hence we were able to initialise a new instance of this class.
+
+5. 

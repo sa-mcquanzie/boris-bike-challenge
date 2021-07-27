@@ -1,8 +1,8 @@
-class DockingStation
+# class DockingStation
 
-  def initialize
-    puts "hello world"
-  end
+#   def initialize
+#     puts "hello world"
+#   end
 
-end
+# end
 
