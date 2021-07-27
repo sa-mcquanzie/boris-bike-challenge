@@ -19,3 +19,11 @@
 - We Defined DockingStation class inside docking_station.rb
 - We required 'DockingStation' in the spec file
 - We ran rspec and found that it passed!
+
+7. Back to the Feature
+
+- We started irb and required our docking_station.rb file containing the DockingStation class
+- We created a new DockingStation instance in irb and called it docking_station
+- This was successful because the DockingStation class now exists and has an initialize method
+- We attempted to call release_bike method on docking_station
+- This failed because there is no such method defined
