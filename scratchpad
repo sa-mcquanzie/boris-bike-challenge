@@ -28,4 +28,14 @@
 - We attempted to call release_bike method on docking_station
 - This failed because there is no such method defined
 
-8. 
+8. Back to the unit
+
+- We wrote test to check if Docking Station instances respond to the release_bike method. 
+We used before each in rspec to create new class instances before each test runs.
+- We then converted the above test to one-line version
+- Ran rspec from the command line and explained the error where we hadn't created a the relevant 
+method in the docking_station class.
+- To eliminate this error, we added the release_bike method to the docking_station class.
+- We then ran rspec and explained why the error was eliminated. It was because we correctly added the method.
+
+
