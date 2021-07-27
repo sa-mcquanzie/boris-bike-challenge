@@ -13,4 +13,9 @@
 - We ran rspec and recieved an error
 - We found the error was describing the same problem as the last error: Uninitialized constant, but was more informative in its description
 
-6. 
+6. Passing Your First Unit Tests
+
+- We created the lib directory and created a docking_station.rb file
+- We Defined DockingStation class inside docking_station.rb
+- We required 'DockingStation' in the spec file
+- We ran rspec and found that it passed!
