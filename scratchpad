@@ -5,4 +5,12 @@
 - We had a good understanding of what the error was from existing knowledge. We skimmed Ruby Documentation to confirm this.
 - We solved the error by creating the missing class hence we were able to initialise a new instance of this class.
 
-5. 
+5. From Feature Tests to Unit Tests
+
+- We set up rspec using 'rspec --init'
+- We added a docking_station file in the lib folder, and a test for it in the spec folder
+- We added a describe block to the docking_station spec to test for the existence of a Docking Station class
+- We ran rspec and recieved an error
+- We found the error was describing the same problem as the last error: Uninitialized constant, but was more informative in its description
+
+6. 
