@@ -27,3 +27,5 @@
 - This was successful because the DockingStation class now exists and has an initialize method
 - We attempted to call release_bike method on docking_station
 - This failed because there is no such method defined
+
+8. 

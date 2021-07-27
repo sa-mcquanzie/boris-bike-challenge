@@ -3,8 +3,7 @@ class DockingStation
     
   end
 
-  # def self.new_method
-  #   "hello world"
-  # end
-
+  def release_bike
+    "Hello, World!"
+  end
 end
