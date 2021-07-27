@@ -10,6 +10,10 @@ describe 'DockingStation' do
   end
 
   it 'responds to release_bike' do
+    expect(@docking_station).to respond_to('release_bike')
+  end
+
+  it 'responds to release_bike' do
     expect(@docking_station.release_bike).to eq("Hello, World!")
   end
 end
