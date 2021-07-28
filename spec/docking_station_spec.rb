@@ -48,6 +48,15 @@ describe DockingStation do
     expect(@docking_station.bikes.pop).to eq(@bike)
   end
 
+  it "should return default capacity" do
+    expect(@docking_station.capacity).to eq(20)
+  end
+
+  it "should return user inputted capacity" do
+    station = DockingStation.new(10)
+    expect(station.capacity).to eq(10)
+  end
+
 
 
 
