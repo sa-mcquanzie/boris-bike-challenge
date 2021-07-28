@@ -3,7 +3,8 @@ require "./lib/bike.rb"
 
 describe DockingStation do
   before(:each) do 
-    @docking_station = DockingStation.new 
+    @docking_station = DockingStation.new
+    @bike = Bike.new 
   end
   
   it 'responds to release_bike' do
@@ -24,6 +25,11 @@ describe DockingStation do
 
   it 'should return an array of docked bikes' do
     expect(@docking_station.bikes.instance_of?(Array)).to eq(true)
+  end
+
+  it "should add bike to bikes array" do
+    @docking_station.dock(@bike)
+    expect(@docking_station.bikes.pop).to eq(@bike)
   end
 
 
