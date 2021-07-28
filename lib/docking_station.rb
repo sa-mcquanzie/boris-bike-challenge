@@ -4,6 +4,6 @@ class DockingStation
   end
 
   def release_bike
-    "Hello, World!"
+    
   end
 end
