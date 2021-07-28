@@ -8,7 +8,8 @@ class DockingStation
   end
 
   def release_bike
-    @bikes.last if @bikes != []
+    raise "No bikes are available" if @bikes.empty?
+    @bikes.last
   end
 
   def dock bike

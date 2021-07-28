@@ -18,7 +18,7 @@ describe DockingStation do
 
   it "should check if there are bikes to be released" do
     @docking_station.bikes = []
-    raise_error if expect(@docking_station.release_bike).to eq(nil)
+    expect { @docking_station.release_bike }.to raise_error "No bikes are available"
   end
 
   it "should get a bike" do
