@@ -13,6 +13,7 @@ class DockingStation
   end
 
   def dock bike
+    raise "Docking station is full" if @bikes.size >= 1
     @bikes << bike
   end
 end
