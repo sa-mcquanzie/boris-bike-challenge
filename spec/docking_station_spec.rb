@@ -37,7 +37,12 @@ describe DockingStation do
     expect(@docking_station.bikes.instance_of?(Array)).to eq(true)
   end
 
+  it "should tell us the docking station is full" do
+    expect { @docking_station.dock Bike.new }.to raise_error "Docking station is full"
+  end
+
   it "should add bike to bikes array" do
+    @docking_station.bikes = []
     @docking_station.dock(@bike)
     expect(@docking_station.bikes.pop).to eq(@bike)
   end
