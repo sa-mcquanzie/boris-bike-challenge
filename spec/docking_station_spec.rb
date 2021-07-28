@@ -38,6 +38,7 @@ describe DockingStation do
   end
 
   it "should tell us the docking station is full" do
+    19.times { @docking_station.bikes.push(Bike.new) }
     expect { @docking_station.dock Bike.new }.to raise_error "Docking station is full"
   end
 
@@ -55,11 +56,3 @@ describe DockingStation do
   # it { is_expected.to respond_to 'release_bike' }
 
 end
-
-
-
-
-
-
-
-
